@@ -1,0 +1,69 @@
+{
+    "name": "NightHorrors",
+    "CardType": "Event",
+    "CardLimit": "0",
+    "Description": "",
+    "requires": [ ""],
+    "requiresEvent": [
+                        {
+                          "NameOfEvent": "",
+                          "Progress": "-99",
+                          "ChoiceNumber": "-1",
+                          "Choice": ""
+                        }
+                      ],
+    "Speakers": [
+                  {
+                    "name": "???",
+                    "postName": "",
+                    "SpeakerType": "?"
+                  },
+                  {
+                    "name": "DreamEater",
+                    "postName": "",
+                    "SpeakerType": "Monster"
+                  }
+                ],
+    "EventText": [
+                    {
+                        "NameOfScene": "EventStart",
+                        "theScene": [
+                          "As you ponder whether you should catch a power nap, sleep or just relax, a strange sense of unease begins to creep up on you.",
+                          "Dream Eater with her HUGE KNOCKERS comes barging into your room, gives you the magic MacGuffin and disappears.",
+                          "SetChoice", "1", "GotStone",
+                          "GiveItem", "1", "Dream Stone",
+                          "JumpToEventThenScene", "Go to your room.", "RoomMenu"
+                                  ]
+                    },
+                    {
+                      "NameOfScene": "AstralDreaming",
+                      "theScene": [
+                          "IfChoice", "2", "DreamtBefore", "RepeatDreaming",
+                          "SetChoice", "2", "DreamtBefore",
+                          "JumpToScene", "FirstDreaming"
+                      ]
+                    },
+                    {
+                      "NameOfScene": "FirstDreaming",
+                      "theScene": [
+                        "This is your first dream and you clutch the stone like a whiny baby.",
+                        "JumpToScene", "RunDream"
+                      ]
+                    },
+                    {
+                      "NameOfScene": "RepeatDreaming",
+                      "theScene": [
+                        "This is not your first dream and you clutch the stone like a practiced baby.",
+                        "JumpToScene", "RunDream"
+                      ]
+                    },
+                    {
+                      "NameOfScene": "RunDream",
+                      "theScene": [
+                        "Dream starts, this starts call-returning the individual night horror monster events.",
+                        "CallEventAndSceneThenReturn", "Clingy Invader", "EventStart",
+                        "JumpToEventThenScene", "Go to your room.", "WakeUpVictory"
+                      ]
+                    }
+                ]
+}

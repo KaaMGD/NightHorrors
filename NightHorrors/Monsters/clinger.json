@@ -1,0 +1,143 @@
+{
+    "name": "Clinger",
+    "IDname": "Clinger",
+    "species": "Dream Aberrant",
+    "gender": "female",
+    "description": "A shapeless, pale mass of incorporeal tentacles frames this dream woman's lithe body. Like many of other features, her upper face is shrouded in uncertain astral mists and cannot be seen.\n\nWhat little of her body that can be perceived and understood looks incomplete, fragile and... lonely.",
+    "encyclopedia": "S?? ?i?? cl?n? ?n?? ?o?, ??r ?o??r, ?nd ???e c?n?ro?.",
+    "tags": "none",
+    "generic": "True",
+    "requires": [""],
+    "requiresEvent": [
+                        {
+                          "NameOfEvent": "",
+                          "Progress": "-99",
+                          "ChoiceNumber": "-1",
+                          "Choice": ""
+                        }
+                      ],
+    "skillList": [""],
+    "perks": ["NoChest", "NoAnus", "NoPussy", "Energy Drainer","Semen Eater","Grappler","Grappler", "Uncontainable","Ecstatic Strike","Slippery","Melty Touch","Skilled Tongue","Clingy","Clingy","Clingy"],
+    "stats": { "lvl": "40",
+              "Exp": "300",
+              "max_hp": "500",
+              "max_ep": "10",
+              "max_sp": "1",
+              "Power": "50",
+              "Technique": "40",
+              "Intelligence": "20",
+              "Allure": "40",
+              "Willpower": "60",
+              "Luck": "15"
+    },
+    "Fetishes": [""],
+    "BodySensitivity": { "Sex": "10",
+              "Ass": "10",
+              "Breasts": "10",
+              "Mouth": "30",
+              "Seduction": "40",
+              "Magic": "20",
+              "Pain": "10",
+              "Holy": "10",
+              "Unholy": "10"
+    },
+    "resistancesStatusEffects": {
+              "Stun": "30",
+              "Charm": "30",
+              "Aphrodisiac": "30",
+              "Restraints": "999",
+              "Sleep": "999",
+              "Trance": "999",
+              "Paralysis": "999",
+              "Debuff": "10"
+    },
+    "moneyDropped": "300",
+    "ItemDropList": [
+                      {
+                        "name": "Latching Organ",
+                        "dropChance": "15"
+                      }
+                    ],
+    "lossScenes": [
+                    {
+                        "NameOfScene": "AbsorptionNightmare",
+                        "move": "",
+                        "stance": "",
+                        "includes": [ ""],
+                        "theScene": [ ""
+                                  ],
+                        "picture": ""
+                    }
+                  ],
+    "combatDialogue": [
+                        {
+                            "lineTrigger": "HitWith",
+                            "move": "Spank",
+                            "theText": [ ""
+                                        ]
+                        },
+                        {
+                            "lineTrigger": "UsesMove",
+                            "move": "",
+                            "theText": [ "''"]
+                        },
+                        {
+                            "lineTrigger": "LowHealth",
+                            "move": "",
+                            "theText": [ "''"]
+                        },
+                        {
+                            "lineTrigger": "PlayerLowHealth",
+                            "move": "",
+                            "theText": [ "''"]
+                        },
+                        {
+                            "lineTrigger": "OnPlayerOrgasm",
+                            "move": "",
+                            "theText": [ ""
+                                      ]
+                        },
+                        {
+                            "lineTrigger": "onOrgasm",
+                            "move": "",
+                            "theText": [ ""
+                                      ]
+                        },
+                        {
+                            "lineTrigger": "OnSurrender",
+                            "move": "",
+                            "theText": [ ""]
+                        }
+                      ],
+  "victoryScenes": [
+            {
+                "NameOfScene": "",
+                "move": "",
+                "stance": "",
+                "includes": [ ""],
+                "theScene": [ ""
+                          ],
+                "picture": ""
+            }
+        ],
+"pictures": [
+              {
+                  "Name": "None",
+                  "StartOn": "1",
+                  "AlwaysOn": "1",
+                  "IsScene": "0",
+                  "TheBody": "1",
+                  "Overlay": "No",
+                  "setXalign": "0.0",
+                  "setYalign": "0.0",
+                  "Images": [
+                  {
+                      "Name": "None",
+                      "File": "",
+                      "setXalign": "0.0",
+                      "setYalign": "0.0"
+                  }
+                ]
+              }
+            ]
+}

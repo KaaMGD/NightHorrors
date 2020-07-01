@@ -1,0 +1,68 @@
+{
+    "name": "Go to your room.",
+    "CardType": "Addition",
+    "CardLimit": "0",
+    "Description": "",
+    "requires": [ ""],
+    "Speakers": [
+                  {
+                    "name": "Vivian",
+                    "postName": "",
+                    "SpeakerType": "Monster"
+                  }
+                ],
+    "EventText": [
+                    {
+                        "NameOfScene": "RoomMenu",
+                        "theScene": [ "SetChoice", "1", "",
+                                      "Menu",
+                                        "Rest. (Advances Time 1)",
+                                        "Sleep till morning.",
+                                        "FinalOption",
+                                        "Leave",
+                                      "EndLoop"
+                                  ]
+                    },
+                    {
+                      "NameOfScene": "RoomMenu",
+                      "theScene": [
+                        "MenuAddition",
+                        "RequiresChoiceFromEvent", "NightHorrors", "1", "",
+                        "Feel restless...",
+                        "RequiresChoiceFromEvent", "NightHorrors", "1", "GotStone",
+                        "Focus on the stone before bed...",
+                        "EndLoop"
+                      ]
+                    },
+                    {
+                      "NameOfScene": "Feel restless...",
+                      "theScene": [
+                        "JumpToEventThenScene", "NightHorrors", "EventStart"
+                      ]
+                    },
+                    {
+                      "NameOfScene": "Focus on the stone before bed...",
+                      "theScene": [
+                        "JumpToEventThenScene", "NightHorrors", "AstralDreaming"
+                      ]
+                    },
+                    {
+                      "NameOfScene": "WakeUpLoss",
+                      "theScene": [
+                        "You got molested in your sleep and splooged all over the bedsheets.",
+                        "SetSpirit", "1",
+                        "AdvanceTime", "3",
+                        "JumpToScene", "RoomMenu"
+                      ]
+                    },
+                    {
+                      "NameOfScene": "WakeUpVictory",
+                      "theScene": [
+                        "You managed to emerge up from the night horrors victorious! You feel really refreshed.",
+                        "RefreshPlayer",
+                        "AdvanceTime", "3",
+                        "JumpToScene", "RoomMenu"
+                      ]
+                    }
+            ]
+}

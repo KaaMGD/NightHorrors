@@ -1,0 +1,48 @@
+{
+    "name": "Clingy Invader",
+    "CardType": "",
+    "CardLimit": "0",
+    "Description": "",
+    "requires": [ ""],
+    "requiresEvent": [
+                        {
+                          "NameOfEvent": "",
+                          "Progress": "-99",
+                          "ChoiceNumber": "-1",
+                          "Choice": ""
+                        }
+                      ],
+    "Speakers": [
+                  {
+                    "name": "Clinger",
+                    "postName": "",
+                    "SpeakerType": ""
+                  }
+                ],
+    "EventText": [
+                    {
+                        "NameOfScene": "EventStart",
+                        "theScene": [  "You dream of a clingy thing that wacks your pp until you splooge.",
+                            "Did you win?",
+                            "Menu",
+                            "Won!",
+                            "Lost!",
+                            "EndLoop"
+                            ]
+                    },
+                    {
+                      "NameOfScene": "Won!",
+                      "theScene": [
+                        "Ok."
+                      ]
+                    },
+                    {
+                      "NameOfScene": "Lost!",
+                      "theScene": [
+                        "jumping to loss wakey then.",
+                        "JumpToEventThenScene", "Go to your room.", "WakeUpLoss"
+                      ]
+                    }
+
+                ]
+}
