@@ -90,21 +90,28 @@
                     {
                       "NameOfScene": "FirstDreaming",
                       "theScene": [
-                        "This is your first dream and you clutch the stone like a whiny baby.",
+                        "Driven by desire for adventure, promise of money or perhaps simple curiosity, you resolve to explore the strange dream realm.",
+                        "Climbing into your bed you settle down and clutch the magical stone, idly wondering how the thing even works.",
+                        "Laying under the sheets you feel your heart pounding nervously, anticipating the undoubtedly strange experience that is about to happen. It takes you some time to calm yourself before you start feeling drowsy, slowly slipping into the dream lands...",
+                        "You feel a sudden pull just beneath your navel, sending you flying! You jolt awake and open your eyes...",
+                        "...Only to discover a strange land stretching far in front of you!",
+                        "The surroundings are completely unfamiliar and don't feel real. You glance down and realize that you struggle with perceiving your own body... It looks floaty and unfamilar.",
+                        "Surprisingly enough, a mere glance at yourself seems to reinforce your self-awareness, making it easier to exist in the strange space.",
+                        "You set your sights on a tall tower in the distance and take off. Onwards, to adventure!",
                         "JumpToScene", "RunDream"
                       ]
                     },
                     {
                       "NameOfScene": "RepeatDreaming",
                       "theScene": [
-                        "This is not your first dream and you clutch the stone like a practiced baby.",
+                        "Deciding to explore the astral realm again, you grab your trusty stone and climb into bed. This time, you have no trouble falling asleep again...",
+                        "And quickly find yourself in a familiar spot. The Tower, so achingingly out of reach, looms in the distance again and you set towards it with a sigh.",
                         "JumpToScene", "RunDream"
                       ]
                     },
                     {
                       "NameOfScene": "RunDream",
                       "theScene": [
-                        "Dream starts, this starts call-returning the individual night horror monster events.",
                         "CallEventAndSceneThenReturn", "Clingy Invader", "EventStart",
                         "JumpToEventThenScene", "Go to your room.", "WakeUpVictory"
                       ]
