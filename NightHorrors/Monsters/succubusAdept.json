@@ -1,0 +1,144 @@
+{
+    "name": "Adept",
+    "IDname": "SuccubusAdept",
+    "species": "",
+    "gender": "female",
+    "description": "She has really big boobies.",
+    "encyclopedia": "",
+    "tags": "none",
+    "generic": "False",
+    "requires": [ ""],
+    "requiresEvent": [
+                        {
+                          "NameOfEvent": "",
+                          "Progress": "-99",
+                          "ChoiceNumber": "-1",
+                          "Choice": ""
+                        }
+                      ],
+    "skillList": [ ""],
+    "perks": [ ""],
+    "stats": { "lvl": "170",
+              "Exp": "10",
+              "max_hp": "100",
+              "max_ep": "10",
+              "max_sp": "1",
+              "Power": "5",
+              "Technique": "5",
+              "Intelligence": "45",
+              "Allure": "45",
+              "Willpower": "99",
+              "Luck": "5"
+    },
+    "Fetishes": [ ""],
+    "BodySensitivity": { "Sex": "75",
+              "Ass": "75",
+              "Breasts": "100",
+              "Mouth": "75",
+              "Seduction": "75",
+              "Magic": "50",
+              "Pain": "75",
+              "Holy": "150",
+              "Unholy": "50"
+    },
+    "resistancesStatusEffects": {
+              "Stun": "0",
+              "Charm": "0",
+              "Aphrodisiac": "0",
+              "Restraints": "0",
+              "Sleep": "0",
+              "Trance": "0",
+              "Paralysis": "0",
+              "Debuff": "0"
+    },
+    "moneyDropped": "0",
+    "ItemDropList": [
+                      {
+                        "name": "Anaph Herb",
+                        "dropChance": "75"
+                      }
+                    ],
+    "lossScenes": [
+                    {
+                        "NameOfScene": "",
+                        "move": "",
+                        "stance": "",
+                        "includes": [ ""],
+                        "theScene": [ ""
+                                  ],
+                        "picture": ""
+                    }
+                  ],
+    "combatDialogue": [
+                        {
+                            "lineTrigger": "HitWith",
+                            "move": "Spank",
+                            "theText": [ ""
+                                        ]
+                        },
+                        {
+                            "lineTrigger": "UsesMove",
+                            "move": "",
+                            "theText": [ "''"]
+                        },
+                        {
+                            "lineTrigger": "LowHealth",
+                            "move": "",
+                            "theText": [ "''"]
+                        },
+                        {
+                            "lineTrigger": "PlayerLowHealth",
+                            "move": "",
+                            "theText": [ "''"]
+                        },
+                        {
+                            "lineTrigger": "OnPlayerOrgasm",
+                            "move": "",
+                            "theText": [ ""
+                                      ]
+                        },
+                        {
+                            "lineTrigger": "onOrgasm",
+                            "move": "",
+                            "theText": [ ""
+                                      ]
+                        },
+                        {
+                            "lineTrigger": "OnSurrender",
+                            "move": "",
+                            "theText": [ ""]
+                        }
+                      ],
+  "victoryScenes": [
+            {
+                "NameOfScene": "",
+                "move": "",
+                "stance": "",
+                "includes": [ ""],
+                "theScene": [ ""
+                          ],
+                "picture": ""
+            }
+        ],
+"pictures": [
+              {
+                  "Name": "None",
+                  "StartOn": "1",
+                  "AlwaysOn": "1",
+                  "IsScene": "0",
+                  "TheBody": "1",
+                  "Overlay": "No",
+                  "setXalign": "0.0",
+                  "setYalign": "0.0",
+                  "Images": [
+                  {
+                      "Name": "None",
+                      "File": "",
+                      "setXalign": "0.0",
+                      "setYalign": "0.0"
+                  }
+                ]
+              }
+            ]
+
+    }

@@ -14,26 +14,70 @@
                       ],
     "Speakers": [
                   {
+                    "name": "SuccubusAdept",
+                    "postName": "",
+                    "SpeakerType": "Monster"
+                  },
+                  {
                     "name": "???",
                     "postName": "",
                     "SpeakerType": "?"
-                  },
-                  {
-                    "name": "DreamEater",
-                    "postName": "",
-                    "SpeakerType": "Monster"
                   }
                 ],
     "EventText": [
                     {
                         "NameOfScene": "EventStart",
                         "theScene": [
+                          "ChangeBGM", "music/Capital/03　illegal invasion.mp3",
                           "As you ponder whether you should catch a power nap, sleep or just relax, a strange sense of unease begins to creep up on you.",
-                          "Dream Eater with her HUGE KNOCKERS comes barging into your room, gives you the magic MacGuffin and disappears.",
-                          "SetChoice", "1", "GotStone",
-                          "GiveItem", "1", "Dream Stone",
-                          "JumpToEventThenScene", "Go to your room.", "RoomMenu"
+                          "You stand up from the bed and swing open the window, hoping to chase away the unpleasant atmosphere with a gulp of fresh air.",
+                          "It does give a brief pause to the onset of unexplained anxiety, but only for a short moment. You hear a soft knock on the door.",
+                          "Menu",
+                            "'Who is there?'",
+                            "Try to ignore it.",
+                          "EndLoop"
                                   ]
+                    },
+                    {
+                      "NameOfScene": "'Who is there?'",
+                      "theScene": [
+                          "You don't get a response, but the door swings open...",
+                          "JumpToScene", "EntersAnyway"
+                      ]
+                    },
+                    {
+                      "NameOfScene": "Try to ignore it.",
+                      "theScene": [
+                          "You turn back to the window, but hear the door swing open...",
+                          "JumpToScene", "EntersAnyway"
+                      ]
+                    },
+                    {
+                      "NameOfScene": "EntersAnyway",
+                      "theScene": [
+                        "DisplayCharacters", "1", "EndLoop",
+                        "A tall succubus dressed in surprisingly conservative robes enters your room. You are pretty sure you locked the door...",
+                        "Speaks2", "My apologies for entering uninvited, Adventurer {ThePlayerName}.",
+                        "She speaks in a hushed, almost whispering voice that still manages to sound calm and confident. You are unsure if she is trying to keep quiet or this is just how her voice sounds.",
+                        "Speaks2", "I come with a mutually beneficial business proposition. I hear you are an adventurer of considerable skill, and the job should be well within your capabilities.",
+                        "You inquire for the job's details as well as her name, seeing how she seems to already know yours.",
+                        "Speaks", "You may refer to me as Adept. I have no intention of disclosing my real name, so do forgive me if that comes off as rude.",
+                        "Before you manage to ask anything else, she resumes talking.",
+                        "Speaks", "Your job will be... not simple. You will be exploring an environment where many of your abilities may be difficult to use... and most human males find the place to be incredibly uncanny.\nIt is not inaccurate to say that you will be facing exclusively aberrant monsters at a severe disadvantage.",
+                        "Speaks", "In essence, you will be entering a more esoteric plane of existence. Akin to Lucidia, it is populated by monster women with similar desires.\nWhat will be different is your form - you will be unable to fight normally at all, at least not until you find someone inside that is willing to serve as an anchor for you.",
+                        "Speaks", "I recommend you make anchor-friends fast - regaining your full ability to act is crucial for successful exploration. But don't expect it to happen soon, it may take you several months to master your spiritual body.",
+                        "She just keeps talking...",
+                        "Speaks", "The realm is accessible by sleeping with a special stone in your hand. Your grimoire and recall stone are both unable to attune to the astral plane, but don't worry - should you run out of spiritual essence, you will simply wake up. There are also esoteric gates inside that serve as exit points, you will encounter many along the way.",
+                        "Speaks", "What I need from you is simple - successfully explore the place, and sell items you find there to Amber. She will inform me once you start bringing in the goods.",
+                        "Speaks", "If anything, the job should fill your pockets pretty nicely. If I find your performance outstanding, I may contact you for more specific jobs later on.",
+                        "Speaks", "Lastly, I am not expecting an answer here and now. Using the stone is entirely up to you, and you may simply ignore it, if you're not interested.\nFarewell now.",
+                        "SetChoice", "1", "GotStone",
+                        "GiveItem", "1", "Dream Stone",
+                        "DisplayCharacters", "EndLoop",
+                        "...She talked up a storm and left, just like that... You never even got the opportunity to ask anything.\nThe mysterious unease that was gnawing at you a moment ago is gone as well.",
+                        "Well, at least she got her point across well enough.\nNow, should you use the stone...?",
+                        "JumpToEventThenScene", "Go to your room.", "RoomMenu"
+                      ]
                     },
                     {
                       "NameOfScene": "AstralDreaming",
