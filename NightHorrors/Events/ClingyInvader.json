@@ -22,13 +22,61 @@
     "EventText": [
                     {
                         "NameOfScene": "EventStart",
-                        "theScene": [  "You dream of a clingy thing that wacks your pp until you splooge.",
-                            "Did you win?",
-                            "Menu",
-                            "Won!",
-                            "Lost!",
-                            "EndLoop"
+                        "theScene": [
+                          "IfChoice", "1", "SawMist", "RepeatMist",
+                          "SetChoice", "1", "SawMist",
+                          "As you're walking through the strange, distorted realm, you notice a silvery mist slowly fill the surroundings.",
+                          "While floaty and weak at first, it quickly becomes thicker and conceals the tower from view, making it difficult to keep walking in the right direction.",
+                          "You stop to look around, hoping that you can find a short path out of the silvery menace...",
+                          "DisplayCharacters", "1", "EndLoop",
+                          "But your observations are cut short as you spot an uncertain figure in the mist, approaching slowly...",
+                          "Recalling that you are unable to fight right now, you wonder if you should try to escape her... But there may be more of them in the mist, so moving rashly is dangerous... But then again, she could be a friendly monster and become your 'anchor' instead...",
+                          "The figure keeps getting closer until you snap out of your thoughts, that you retrospectively recognize as sluggish! The place makes it difficult to even think, and the pale, tentacley mass of a monster is now right in front of you, making escape impossible.",
+                          "Menu",
+                            "Greet her.",
+                            "",
+                          "EndLoop"
                             ]
+                    },
+                    {
+                      "NameOfScene": "RepeatMist",
+                      "theScene": [
+                        "",
+                        "Menu",
+                          "Get away.",
+                          "Approach the clinger.",
+                        "EndLoop"
+                      ]
+                    },
+                    {
+                      "NameOfScene": "Get away.",
+                      "theScene": [
+                          "StatCheck",
+                          "Technique",
+                          "35",
+                            "Escaped!",
+                          "Fail",
+                            "Failed!"
+                      ]
+                    },
+                    {
+                      "NameOfScene": "Escaped!",
+                      "theScene": [
+                        "Quick on your feet, you move away from the uncertain figure and soon exit the misty area.",
+                        "Stopping to examine the misty mass from a safe distance, you realize that it is slowly crawling over the ground in a particular direction, likely following whoever is inside it.",
+                      ]
+                    },
+                    {
+                      "NameOfScene": "Failed!",
+                      "theScene": [
+                        ""
+                      ]
+                    },
+                    {
+                      "NameOfScene": "Approach the clinger.",
+                      "theScene": [
+                        ""
+                      ]
                     },
                     {
                       "NameOfScene": "Won!",
